@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'About';
+const description = 'About your blog.';
+const permalink = `${Astro.site.href}about`;
+---
+
+<BaseLayout title="About AIGC" description="Learn about the power and potential of AI-Generated Content" permalink="/about/aigc" current="about-aigc">
+  <div class="container">
+    <h1>About AIGC</h1>
+    <figure class="about-image">
+      <img src="/assets/aigc-illustration.webp" alt="Illustration of AI generating content" width="330">
+      <figcaption>
+        Illustration by
+        <a href="https://ree98.cn" target="_blank" rel="noopener">Ree</a>
+      
+      </figcaption>
+    </figure>
+    <p class="styled-text">Content inspired by <a href="https://openai.com" target="_blank">OpenAI</a>.</p>
+    <p>Imagine a world where content creation is as easy as a few clicks. This is no longer a fantasy, but a reality with AI-Generated Content. From writing articles to creating designs, AI is revolutionizing the way we create and consume content.</p>
+    <p>Ever wondered how it's like to have a virtual assistant generate content for you? With AIGC, you can have high-quality content at your disposal. No more grappling with writer's block or spending hours trying to perfect your design.</p>
+    <p>Remember when content creation used to be a tedious process? Those days are long gone. With AIGC, you can have content created, revised, and perfected in a fraction of the time. And it's not just about speed. It's about the ability to generate content that's tailored to your specific needs.</p>
+    <p>Think about all the possibilities! The future of content is here, and it's powered by AI. Whether you're a content creator, marketer, or just someone who loves to create, AIGC is your ticket to a world of endless creative possibilities.</p>
+    <p>So, are you ready to dive into the world of AI-Generated Content? It's time to explore the future of content creation. And remember, with AIGC, the sky is the limit.</p>
+  </div>
+</BaseLayout>
+
+
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+  .styled-text::first-letter {
+  font-size: 2em;
+  float: left;
+  padding-right: 4px;
+  line-height: 1;
+}
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
